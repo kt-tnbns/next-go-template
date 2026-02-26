@@ -1,0 +1,39 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Car Rental API",
+        "title": "Car Rental API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "paths": {
+        "/database-health": {
+            "get": {
+                "description": "Checks if the database connection is successful",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "database"
+                ],
+                "summary": "Check database connection",
+                "responses": {}
+            }
+        },
+        "/health": {
+            "get": {
+                "description": "Checks if the server is running",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "health"
+                ],
+                "summary": "Check server health",
+                "responses": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+basePath: /
+host: localhost:3000
+info:
+  contact: {}
+  description: Car Rental API
+  title: Car Rental API
+  version: "1.0"
+paths:
+  /database-health:
+    get:
+      description: Checks if the database connection is successful
+      produces:
+      - application/json
+      responses: {}
+      summary: Check database connection
+      tags:
+      - database
+  /health:
+    get:
+      description: Checks if the server is running
+      produces:
+      - application/json
+      responses: {}
+      summary: Check server health
+      tags:
+      - health
+swagger: "2.0"
